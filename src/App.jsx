@@ -13,8 +13,8 @@ function App() {
         <Number>{number >= 100? `${number} Still clicking?`: ` ${number}`}</Number>
       </Div>
       <Div>
-        <Button onClick={() => setNumber(number - 1)}>-</Button>
-        <Button onClick={() => setNumber(number + 1)}>+</Button>
+        <Button onClick={() => setNumber((prevNumber) => prevNumber - 1)}>-</Button>
+        <Button onClick={() => setNumber((prevNumber) => prevNumber + 1)}>+</Button>
       </Div>
     </Container>
   );
